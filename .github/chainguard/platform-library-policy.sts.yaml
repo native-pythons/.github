@@ -1,0 +1,10 @@
+# subject pattern is defining what repo and branch is allowed to generate a token at the permission level set below
+issuer: https://token.actions.githubusercontent.com
+subject_pattern: "repo:native-pythons/.*"
+
+permissions:
+  contents: read
+
+# list of repositories we want to make contents readable by the repos identified in the subject_pattern
+repositories:
+  - platform-library
